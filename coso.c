@@ -1,32 +1,29 @@
 int _printf(const char *format, ...)
 {
-	va_list pepe;
+	va_list args;
 	estructura listita[] = {
-		{ "c", coso1 },
-		{ "s", coso2 },
-		{ "%", coso3 }
+		{ "c", printC },
+		{ "s", printS },
+		{ "%", printP }
 	};
-	unsigned int PEPE1, PEPE2;
+	unsigned int i = 0, j;
 
-	PEPE1 = 0;
-	PEPE2 = 0;
+	va_start(args, format);
 
-	va_start(pepe, format);
-
-	while (format != NULL && format[PEPE1])
+	while (format != NULL && format[i])
 	{													
-		PEPE2 = 0;
-		while (PEPE1 < 3)
+		j = 0;
+		while (i < 3)
 		{
-			if (format[PEPE1] == "%")												
+			if (format[i] == "%")												
 			{
-				if (format[PEPE1] == *form_types[PEPE2].identifier)
+				if (format[i] == *form_types[j].identifier)
 				{
-					form_types[PEPE2].f(separator, args);
+					listita[j].f(args);
 				}
-				PEPE2++;
+				j++;
 			}
-			PEPE1++;
+			i++;
 		}
 	}
 }
