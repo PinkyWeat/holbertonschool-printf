@@ -13,12 +13,10 @@ int printC (va_list args)
 
 int printS(va_list args)
 {
-	char *string;
+	char *string = va_arg(args, char *);
 	int len, i;
 
-	string = va_arg(args, char *);
 	len = strlen(string);
-
 	if (string == NULL)
 	{
 		return (-1);
