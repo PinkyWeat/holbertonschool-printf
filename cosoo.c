@@ -38,7 +38,6 @@ int _printf(const char *format, ...)
 			}
 			if (j == 3)
 			{
-				_putchar('%');
 				_putchar(format[i]);
 				counter++;
 			}
