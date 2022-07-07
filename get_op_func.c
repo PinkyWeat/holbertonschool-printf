@@ -35,4 +35,18 @@ int printS(va_list args)
 
 int printP(va_list args)
 {
+	char *string;
+	int i;
+
+	string = va_arg(args, char*);
+	i = 0;
+
+	while (string[i])
+	{
+		if (string[i] == '%')
+		{
+			_putchar('%');
+			return(0);
+		}
+	}
 }
