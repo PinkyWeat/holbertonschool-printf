@@ -1,12 +1,16 @@
 #include "main.h"
-
+/**
+ * _printf - prints.
+ * @format: content type.
+ * Return: number of chars printed.
+ */
 int _printf(const char *format, ...)
 {
 	va_list args;
 	int i = 0, counter = 0;
 
 	/* format null? || string doesn't have % */
-	if (!format || !strcmp(format,"%"))
+	if (!format || !strcmp(format, "%"))
 		return (-1);
 	/* starts */
 	va_start(args, format);
@@ -33,7 +37,12 @@ int _printf(const char *format, ...)
 	va_end(args);
 	return (counter);
 }
-
+/**
+ * aux - looks for type to print.
+ * @args: what type to print.
+ * @c: char that compared.
+ * Return: number of chars printed.
+ */
 int aux(va_list args, char c)
 {
 	int j = 0;
