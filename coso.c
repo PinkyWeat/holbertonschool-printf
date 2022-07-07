@@ -1,7 +1,9 @@
+#include "main.h"
+
 int _printf(const char *format, ...)
 {
 	va_list args;
-	estructura listita[] = {
+	list listita[] = {
 		{ "c", printC },
 		{ "s", printS },
 		{ "%", printP }
@@ -28,7 +30,8 @@ int _printf(const char *format, ...)
 	}
 }
 
-void coso1(va_list pepe)
+void printC(va_list args)
 {
 	printf("%s", char);
+
 }
