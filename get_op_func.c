@@ -24,7 +24,7 @@ int printS(va_list args)
 	{
 		for (i = 0; i < len; i++)
 		{
-			if (string[i] == 32 && string[i + 1] != 0)
+			if (string[i] == 32)
 				_putchar(32);
 			_putchar(string[i]);
 		}
