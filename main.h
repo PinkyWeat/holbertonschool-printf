@@ -3,12 +3,13 @@
 #include <stddef.h>
 #include <stdarg.h>
 #include <stdio.h>
+#include <string.h>
 
 int _putchar(char c);
 
 int _printf(const char *format, ...);
 
-typdef struct list
+typedef struct list
 {
 	char *id;
 	void (*f)(va_list args);

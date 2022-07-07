@@ -10,7 +10,7 @@ int _printf(const char *format, ...)
 	};
 	int i = 0, j, counter = 0;
 
-	/* format null? */
+	/* format null? || string doesn't have % */
 	if (!format || !strcmp(format,"%"))
 		return (-1);
 
@@ -19,19 +19,31 @@ int _printf(const char *format, ...)
 
 	while (format[i])
 	{
-	j = 0;
-	if (format[i] == "%" && (format[i + 1] == 0 || format[i + 1] == '%'))
-	{
-		_putchar("%");
-		i++;
-		counter++;
-	if (format[i] == *form_types[j].identifier)
+		if (format[i] == "%" && (format[i + 1] == 0 || format[i + 1] == '%'))
+		{
+			_putchar("%");
+			i++;
+			counter++;
+		}
+		else if (format[i] == "%")
+		{
+			j = 0;
+			while (j < 3)
+			{
+				if (*listita[j].id == format[i + 1])
 				{
-					listita[j].f(args);
+					counter += listita[j].listita(args);
+					i++;
 				}
 				j++;
 			}
-			i++;
+		}
+		else
+		{
+			counter += 1;
+			_putchar(format[i]);
 		}
 	}
+	va_end(args);
+	return (counter);
 }
