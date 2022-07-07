@@ -32,7 +32,7 @@ int _printf(const char *format, ...)
 			{
 				if (*listita[j].id == format[i + 1])
 				{
-					counter += listita[j].list_t(args);
+					counter += listita[j].f(args);
 					i++;
 				}
 				j++;

@@ -46,7 +46,8 @@ int printP(va_list args)
 		if (string[i] == '%')
 		{
 			_putchar('%');
-			return(0);
+			return(1);
 		}
 	}
+	return (0);
 }

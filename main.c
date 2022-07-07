@@ -9,11 +9,10 @@
  */
 int main(void)
 {
-    	int len;
-	char *s = "hola";
+    	char *s = "hola";
 	char c = '%';
 
 	_printf("%s\n", s);
-
+	_printf("%c\n", c);
 	return (0);
 }

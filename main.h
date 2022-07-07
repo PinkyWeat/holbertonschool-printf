@@ -12,7 +12,7 @@ int _printf(const char *format, ...);
 typedef struct list
 {
 	char *id;
-	void (*f)(va_list args);
+	int (*f)(va_list args);
 } list_t;
 
 int printC(va_list args);
