@@ -19,20 +19,20 @@ int _printf(const char *format, ...)
 
 	while (format[i])
 	{
-		if (format[i] == "%" && (format[i + 1] == 0 || format[i + 1] == '%'))
+		if (format[i] == '%' && (format[i + 1] == 0 || format[i + 1] == '%'))
 		{
-			_putchar("%");
+			_putchar('%');
 			i++;
 			counter++;
 		}
-		else if (format[i] == "%")
+		else if (format[i] == '%')
 		{
 			j = 0;
 			while (j < 3)
 			{
 				if (*listita[j].id == format[i + 1])
 				{
-					counter += listita[j].listita(args);
+					counter += listita[j].list_t(args);
 					i++;
 				}
 				j++;
