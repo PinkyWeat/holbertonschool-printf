@@ -13,7 +13,6 @@ int printC (va_list args)
 int printS(va_list args)
 {
 	char *string = va_arg(args, char *);
-	char *pepon = "(null)";
 	int len, i;
 
 	len = strlen(string);
@@ -27,7 +26,12 @@ int printS(va_list args)
 		{
 			if (string[i] == 0)
 			{
-				_putchar(pepon);
+				_putchar(40);
+				_putchar(110);
+				_putchar(117);
+				_putchar(108);
+				_putchar(108);
+				_putchar(40);
 			}
 			_putchar(string[i]);
 		}
