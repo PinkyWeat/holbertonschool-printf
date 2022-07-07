@@ -25,7 +25,7 @@ int printS(va_list args)
 	}
 	else
 	{
-		for (i = 0; string[i]; i++)
+		for (i = 0; i < len; i++)
 		{
 			_putchar(string[i]);
 		}
