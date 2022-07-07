@@ -32,8 +32,15 @@ int _printf(const char *format, ...)
 				{
 					counter += listita[j].f(args);
 					i++;
+					break;
 				}
 				j++;
+			}
+			if (j == 3)
+			{
+				_putchar('%');
+				_putchar(format[i]);
+				counter++;
 			}
 		}
 		else
