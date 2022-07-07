@@ -24,15 +24,6 @@ int printS(va_list args)
 	{
 		for (i = 0; i < len; i++)
 		{
-			if (string[i] == 0)
-			{
-				_putchar(40);
-				_putchar(110);
-				_putchar(117);
-				_putchar(108);
-				_putchar(108);
-				_putchar(40);
-			}
 			_putchar(string[i]);
 		}
 		return(len);
