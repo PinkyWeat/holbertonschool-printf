@@ -3,12 +3,7 @@
 int _printf(const char *format, ...)
 {
 	va_list args;
-	list_t listita[] = {
-		{ "c", printC },
-		{ "s", printS },
-		{ "%", printP }
-	};
-	int i = 0, j, counter = 0;
+	int i = 0, counter = 0;
 
 	/* format null? || string doesn't have % */
 	if (!format || !strcmp(format,"%"))
@@ -25,22 +20,8 @@ int _printf(const char *format, ...)
 		}
 		else if (format[i] == '%')
 		{
-			j = 0;
-			while (j < 3)
-			{
-				if (*listita[j].id == format[i + 1])
-				{
-					counter += listita[j].f(args);
-					i++;
-					break;
-				}
-				j++;
-			}
-			if (j == 3)
-			{
-				_putchar(format[i]);
-				counter++;
-			}
+			counter += aux(args, format[i + 1]);
+			i++;
 		}
 		else
 		{
@@ -51,4 +32,25 @@ int _printf(const char *format, ...)
 	}
 	va_end(args);
 	return (counter);
+}
+
+int aux(va_list args, char c)
+{
+	int j = 0;
+	list_t listita[] = {
+		{ "c", printC },
+		{ "s", printS },
+		{ "%", printP }
+	};
+	while (j < 3)
+	{
+		if (*listita[j].id == c)
+		{
+			return (listita[j].f(args));
+		}
+		j++;
+	}
+	_putchar('%');
+	_putchar(c);
+	return (2);
 }

@@ -5,15 +5,22 @@
 #include <stdio.h>
 #include <string.h>
 
-int _putchar(char c);
-
-int _printf(const char *format, ...);
-
+/**
+ * struct list - analyze format.
+ * @id: character we look for.
+ * @f: function to be used.
+ */
 typedef struct list
 {
 	char *id;
 	int (*f)(va_list args);
 } list_t;
+
+int _putchar(char c);
+
+int _printf(const char *format, ...);
+
+int aux(va_list args, char c);
 
 int printC(va_list args);
 

@@ -1,15 +1,19 @@
 #include "main.h"
 /**
- * get_op_func - gets the correct function.
- * @s: function name.
- * Return: value.
+ * printC - prints chars.
+ * @args: number of chars.
+ * Return: number of chars printed.
  */
-int printC (va_list args)
+int printC(va_list args)
 {
 	_putchar(va_arg(args, int));
 	return (1);
 }
-
+/**
+ * printS - prints a string.
+ * @args: number of args.
+ * Return: number of characters printed.
+ */
 int printS(va_list args)
 {
 	char *string = va_arg(args, char *), *null = "(null)";
@@ -28,10 +32,14 @@ int printS(va_list args)
 		{
 			_putchar(string[i]);
 		}
-		return(len);
+		return (len);
 	}
 }
-
+/**
+ * printP - prints a module (%).
+ * @args: num of args.
+ * Return: number of chars printed.
+ */
 int printP(va_list args)
 {
 	char *string;
@@ -45,7 +53,7 @@ int printP(va_list args)
 		if (string[i] == '%')
 		{
 			_putchar('%');
-			return(1);
+			return (1);
 		}
 	}
 	return (0);
