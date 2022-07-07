@@ -28,7 +28,7 @@ int _printf(const char *format, ...)
 			j = 0;
 			while (j < 3)
 			{
-				if (listita[j].id == format[i + 1])
+				if (*listita[j].id == format[i + 1])
 				{
 					counter += listita[j].f(args);
 					i++;
