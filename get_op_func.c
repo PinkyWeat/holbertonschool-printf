@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stddef.h>
 /**
  * get_op_func - gets the correct function.
  * @s: function name.
@@ -25,6 +24,8 @@ int printS(va_list args)
 	{
 		for (i = 0; i < len; i++)
 		{
+			if (string[i] == 32 && string[i + 1]!= NULL)
+				_putchar(32);
 			_putchar(string[i]);
 		}
 		return(len);

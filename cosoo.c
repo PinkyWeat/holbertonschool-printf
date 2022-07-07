@@ -13,10 +13,8 @@ int _printf(const char *format, ...)
 	/* format null? || string doesn't have % */
 	if (!format || !strcmp(format,"%"))
 		return (-1);
-
 	/* starts */
 	va_start(args, format);
-
 	while (format[i])
 	{
 		if (format[i] == '%' && (format[i + 1] == 0 || format[i + 1] == '%'))
