@@ -61,7 +61,7 @@ int printP(va_list args)
 /**
  * printN - calls aux func to print nums.
  * @args: args to print.
- * Return: nums of printed chars. 
+ * Return: nums of printed chars.
  */
 int printN(va_list args)
 {
