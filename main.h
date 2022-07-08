@@ -30,6 +30,6 @@ int printP(va_list args);
 
 int printN(va_list args);
 
-int printN_aux(int n);
+int printN_aux(unsigned int n);
 
 #endif

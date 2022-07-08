@@ -82,7 +82,7 @@ int printN(va_list args)
  * @n: nums to print.
  * Return: prints num + counter for chars.
  */
-int printN_aux(int n)
+int printN_aux(unsigned int n)
 {
 	int c = 0;
 
@@ -90,5 +90,5 @@ int printN_aux(int n)
 	{
 		c = printN_aux(n / 10);
 	}
-	return (_putchar((n % 10) + 48) + c);
+	return (_putchar((n % 10) + '0') + c);
 }
