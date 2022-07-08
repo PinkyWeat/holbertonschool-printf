@@ -4,7 +4,7 @@
 #include <stdarg.h>
 #include <stdio.h>
 #include <string.h>
-
+#include <stdlib.h>
 /**
  * struct list - analyze format.
  * @id: character we look for.
@@ -27,5 +27,9 @@ int printC(va_list args);
 int printS(va_list args);
 
 int printP(va_list args);
+
+int printN(va_list args);
+
+int printN_aux(int n);
 
 #endif

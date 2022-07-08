@@ -49,9 +49,11 @@ int aux(va_list args, char c)
 	list_t listita[] = {
 		{ "c", printC },
 		{ "s", printS },
-		{ "%", printP }
+		{ "%", printP },
+		{ "d", printN },
+		{ "i", printN }
 	};
-	while (j < 3)
+	while (j < 5)
 	{
 		if (*listita[j].id == c)
 		{

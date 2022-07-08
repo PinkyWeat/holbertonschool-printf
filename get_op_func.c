@@ -58,3 +58,37 @@ int printP(va_list args)
 	}
 	return (0);
 }
+/**
+ * printN - calls aux func to print nums.
+ * @args: args to print.
+ * Return: nums of printed chars. 
+ */
+int printN(va_list args)
+{
+	int n = va_arg(args, int);
+
+	if (n < 0)
+	{
+		_putchar('-');
+		return (printN_aux(-n) + 1);
+	}
+	else
+	{
+		return (printN_aux(n));
+	}
+}
+/**
+ * printN_aux - aux func to print nums.
+ * @n: nums to print.
+ * Return: prints num + counter for chars.
+ */
+int printN_aux(int n)
+{
+	int c = 0;
+
+	if (n / 10 != 0)
+	{
+		c = printN_aux(n / 10);
+	}
+	return (_putchar((n % 10) + 48) + c);
+}
