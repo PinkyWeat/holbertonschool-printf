@@ -1,0 +1,50 @@
+.TH man 3 "2020-07-09" "1.0" "paginita de _printf"
+.SH NAME
+_printf - formatea e imprime un string, un character, o un integer a la stdout
+.SH SYNOPSIS
+#include "main.h"
+.br
+_printf (const char *\fIFORMAT\fR, \fIARGUMENT\fR...)
+
+.SH DESCRIPTION
+La funcion _printf() imprime el ARGUMENT dependiendo el conversor proporcionado por FORMAT.
+
+FORMAT es el string que tiene los converores y el lo que se debe imprimir.
+
+Los converores de FORMAT:
+.TP
+%c  -
+Imprime ARGUMENT de tipo character.
+.TP
+%s  -
+Imprime ARGUMENT de tipo string.
+.TP
+%%  -
+Imprime un %.
+.TP
+%d  -
+Imprime ARGUMENT de tipo decimal.
+.TP
+%i  -
+Imprime ARGUMENT de tipo decimal.
+
+.SH RETURN VALUE
+Si todo esta piola, retornara el numero de caracteres impresos, menos el null byte.
+
+Si no va piola, se retornara un negativo.
+
+.SH EXAMPLE
+Printear un string:
+
+int x = 0;
+
+char *string = "Pepo";
+
+x = _printf("I'am %s\n", string);
+
+printf("%d\n", x);
+
+return (0);
+
+.SH AUTHOR
+.B Su magnificencia flowchareana, Denisse Landau - Otaku rarito, Alejandro Montenegro
