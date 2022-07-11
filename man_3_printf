@@ -9,24 +9,24 @@ _printf (const char *\fIFORMAT\fR, \fIARGUMENT\fR...)
 .SH DESCRIPTION
 The function _printf() prints according to format specifiers (subsequences beginning with %), the additional arguments following format are formatted and inserted in the resulting string replacing their respective specifiers.
 
-FORMAT es el string que tiene los converores y el lo que se debe imprimir.
+FORMAT is the string which has the conversors and what is going to be printed.
 
 Los converores de FORMAT:
 .TP
 %c  -
-Imprime ARGUMENT de tipo character.
+Prints ARGUMENT of type character.
 .TP
 %s  -
-Imprime ARGUMENT de tipo string.
+Prints ARGUMENT of type string.
 .TP
 %%  -
-Imprime un %.
+Prints a %.
 .TP
 %d  -
-Imprime ARGUMENT de tipo decimal.
+Prints ARGUMENT of type decimal.
 .TP
 %i  -
-Imprime ARGUMENT de tipo decimal.
+Prints ARGUMENT of type integer.
 
 .SH RETURN VALUE
 On success, the total number of characters written is returned.
