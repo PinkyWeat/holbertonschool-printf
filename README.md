@@ -1,6 +1,6 @@
 # C - printf for Holberton-sama
 
-#Description
+### Description
 
 First Holberton-School group project.
 
@@ -14,12 +14,12 @@ Una funcion printf con los siguientes formatos:
 |  %d | prints a decimal |
 |  %i | prints an integer |
 
-###Requirements
+### Requirements
 
 Tener un compilador,  por ejemplo **gcc**
 
 ---
-###Compilation & Testing
+### Compilation & Testing
 
 Function porototype
 
@@ -30,7 +30,7 @@ Compilamos con:
     gcc -Wall -Wextra -Werror -pedantic -std=gnu89 -Wno-format *.c
 
 ---
-###Example
+### Example
 
 Print a string:
 
@@ -45,6 +45,6 @@ Print a string:
        return (0);
 
 ---
-###Authors
+### Authors
 
 Denisse Landau - Alejandro Montenegro
