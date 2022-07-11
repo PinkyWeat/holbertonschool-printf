@@ -42,7 +42,7 @@ char *string = "Otaku";
 
 x = _printf("I'am an%s\n", string);
 
-printf("%d\n", x);
+_printf("%d\n", x);
 
 return (0);
 
