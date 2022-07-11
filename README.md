@@ -1,6 +1,6 @@
 # C - printf for Holberton-sama
 
-##Description
+#Description
 
 First Holberton-School group project.
 
