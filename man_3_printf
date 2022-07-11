@@ -1,13 +1,13 @@
 .TH man 3 "2020-07-09" "1.0" "paginita de _printf"
 .SH NAME
-_printf - formatea e imprime un string, un character, o un integer a la stdout
+_printf - Writes the C string pointed by format to the standard output (stdout).
 .SH SYNOPSIS
 #include "main.h"
 .br
 _printf (const char *\fIFORMAT\fR, \fIARGUMENT\fR...)
 
 .SH DESCRIPTION
-La funcion _printf() imprime el ARGUMENT dependiendo el conversor proporcionado por FORMAT.
+The function _printf() prints according to format specifiers (subsequences beginning with %), the additional arguments following format are formatted and inserted in the resulting string replacing their respective specifiers.
 
 FORMAT es el string que tiene los converores y el lo que se debe imprimir.
 
@@ -29,22 +29,22 @@ Imprime ARGUMENT de tipo decimal.
 Imprime ARGUMENT de tipo decimal.
 
 .SH RETURN VALUE
-Si todo esta piola, retornara el numero de caracteres impresos, menos el null byte.
+On success, the total number of characters written is returned.
 
-Si no va piola, se retornara un negativo.
+If success is not met, a negative is returned.
 
 .SH EXAMPLE
-Printear un string:
+Print a string:
 
 int x = 0;
 
-char *string = "Pepo";
+char *string = "Otaku";
 
-x = _printf("I'am %s\n", string);
+x = _printf("I'am an%s\n", string);
 
 printf("%d\n", x);
 
 return (0);
 
 .SH AUTHOR
-.B Su magnificencia, ama y señora de los flowcharts: Denisse Landau - Otaku rarito: Alejandro Montenegro
+.B Written by Denisse Landau and Alejandro Montenegro.
