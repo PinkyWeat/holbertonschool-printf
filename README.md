@@ -1,6 +1,7 @@
 # C - printf for Holberton-sama
 
 ###Description
+
 First Holberton-School group project.
 
 Una funcion printf con los siguientes formatos:
@@ -14,6 +15,7 @@ Una funcion printf con los siguientes formatos:
 |  %i | prints an integer |
 
 ###Requirements
+
 Tener un compilador,  por ejemplo **gcc**
 
 ---
