@@ -75,6 +75,12 @@ Print an integer:
 ---
 ### Flowcharts
 
+#### For Mortals...
+
+![](https://i.imgur.com/zS9WNwY.png)
+
+#### For Gods...
+
 ![](https://i.imgur.com/nXjRQfQ.png)
 
 ![](https://i.imgur.com/WOejQLl.png)
