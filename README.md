@@ -1,4 +1,4 @@
-# C - printf for Holberton-sama
+# C - \_printf
 
 ### Description
 
@@ -46,11 +46,23 @@ Print a string:
 
        char *string = "Otaku";
 
-       x = _printf("I'am an%s0, string);
+       x = _printf("I'am am%s, string);
 
-       printf("%d0, x);
+       printf("%s, x);
 
        return (0);
+
+Print an integer:
+
+	int x = 0;
+
+	int prints = 420;
+
+	x = _printf("It's:%i", prints);
+
+	printf("%i", x);
+
+	return(0);
 
 ---
 ### Flowcharts
