@@ -20,11 +20,11 @@ Specifiers:
 
 ### Requirements
 
-- All your files will be compiled on Ubuntu 20.04 LTS using gcc, using the options -Wall -Werror -Wextra -pedantic -std=gnu89
+- All your files will be compiled on Ubuntu 20.04 LTS using gcc, using the options **``-Wall -Werror -Wextra -pedantic -std=gnu89``**
 - Code uses the Betty style.
 - No global variables are allowed.
 - No more than 5 functions per file.
-- All prototypes of all functions are included in header file "main.h".
+- All prototypes of all functions are included in header file ``main.h``.
 
 ---
 ### Compilation & Testing
@@ -66,11 +66,11 @@ Print an integer:
 ---
 ### File Description
 
-- **\_printf**  - contains function \_printf which gives the stdout according to format specifier.
-- **\_putchar** - contains function \_putchar which prints a character to stdout.
+- **\_printf**  - contains function ``\_printf`` which gives the stdout according to format specifier.
+- **\_putchar** - contains function ``\_putchar`` which prints a character to stdout.
 - **get_op_func.c** - contains several functions that are selected according to format specifier.
-- **main.h** -  header file which contains all function prototypes used for \_printf.
-- **man_3_printf** - manual of our \_printf.
+- **main.h** -  header file which contains all function prototypes used for ``\_printf``.
+- **man_3_printf** - manual of our ``\_printf``.
 
 ---
 ### Flowcharts
