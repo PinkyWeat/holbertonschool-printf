@@ -53,6 +53,13 @@ Print a string:
        return (0);
 
 ---
+### Flowcharts
+
+![](https://i.imgur.com/FHT4dxv.png)
+
+![](https://i.imgur.com/fXkReuH.png)
+
+---
 ### Authors
 
 [Denisse Landau](https://www.linkedin.com/in/denisse-l-5844a5140/ "Denisse Landau") - [Alejandro Montnegro](www.linkedin.com/in/alejandro-montenegro-505233184 "Alejandro Montnegro")
