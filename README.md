@@ -1,6 +1,7 @@
 # C - \_printf
 
 ### Description
+=============
 
 First Holberton-School group project.
 
@@ -46,7 +47,7 @@ Print a string:
 
        char *string = "Otaku";
 
-       x = _printf("I'am am%s, string);
+       x = _printf("I'am am an%s, string);
 
        printf("%s, x);
 
@@ -63,6 +64,8 @@ Print an integer:
 	printf("%i", x);
 
 	return(0);
+---
+### File Description
 
 ---
 ### Flowcharts
