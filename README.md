@@ -29,11 +29,11 @@ Specifiers:
 ---
 ### Compilation & Testing
 
-Function porototype
+Function porototype:
 
     int _printf(const char *format, ...);
 
-Compilamos con: 
+We compile with: 
 
     gcc -Wall -Wextra -Werror -pedantic -std=gnu89 -Wno-format *.c
 
@@ -66,11 +66,11 @@ Print an integer:
 ---
 ### File Description
 
-- **\_printf**  - contains function ``\_printf`` which gives the stdout according to format specifier.
-- **\_putchar** - contains function ``\_putchar`` which prints a character to stdout.
+- **\_printf**  - contains function ``_printf`` which gives the stdout according to format specifier.
+- **\_putchar** - contains function ``_putchar`` which prints a character to stdout.
 - **get_op_func.c** - contains several functions that are selected according to format specifier.
-- **main.h** -  header file which contains all function prototypes used for ``\_printf``.
-- **man_3_printf** - manual of our ``\_printf``.
+- **main.h** -  header file which contains all function prototypes used for ``_printf``.
+- **man_3_printf** - manual of our ``_printf``.
 
 ---
 ### Flowcharts
