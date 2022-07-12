@@ -55,9 +55,11 @@ Print a string:
 ---
 ### Flowcharts
 
-![](https://i.imgur.com/FHT4dxv.png)
+![](https://i.imgur.com/nXjRQfQ.png)
 
-![](https://i.imgur.com/fXkReuH.png)
+![](https://i.imgur.com/WOejQLl.png)
+
+![](https://i.imgur.com/oM60hGt.png)
 
 ---
 ### Authors
