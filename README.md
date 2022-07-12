@@ -1,7 +1,7 @@
 # C - \_printf
 
 ### Description
-=============
+
 
 First Holberton-School group project.
 
