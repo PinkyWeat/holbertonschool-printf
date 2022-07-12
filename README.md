@@ -84,4 +84,4 @@ Print an integer:
 ---
 ### Authors
 
-[Denisse Landau](https://www.linkedin.com/in/denisse-l-5844a5140/ "Denisse Landau") - [Alejandro Montnegro](www.linkedin.com/in/alejandro-montenegro-505233184 "Alejandro Montnegro")
+Written by [Denisse Landau](https://www.linkedin.com/in/denisse-l-5844a5140/ "Denisse Landau") and [Alejandro Montnegro](www.linkedin.com/in/alejandro-montenegro-505233184 "Alejandro Montnegro")
