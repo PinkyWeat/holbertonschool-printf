@@ -1,9 +1,14 @@
 # C - printf for Holberton-sama
 
-###Description
+### Description
+
 First Holberton-School group project.
 
-Una funcion printf con los siguientes formatos:
+Clone of C function **"printf"**. Writes the C string pointed by format to the standard output (stdout).
+
+If format includes format specifiers (subsequences beginning with %), the additional arguments following format are formatted and inserted in the resulting string replacing their respective specifiers.
+
+Specifiers:
 
 | Type | Desc. |
 | :---: |:-:|
@@ -13,11 +18,16 @@ Una funcion printf con los siguientes formatos:
 |  %d | prints a decimal |
 |  %i | prints an integer |
 
-###Requirements
-Tener un compilador,  por ejemplo **gcc**
+### Requirements
+
+- All your files will be compiled on Ubuntu 20.04 LTS using gcc, using the options -Wall -Werror -Wextra -pedantic -std=gnu89
+- Code uses the Betty style.
+- No global variables are allowed.
+- No more than 5 functions per file.
+- All prototypes of all functions are included in header file "main.h".
 
 ---
-###Compilation & Testing
+### Compilation & Testing
 
 Function porototype
 
@@ -28,7 +38,7 @@ Compilamos con:
     gcc -Wall -Wextra -Werror -pedantic -std=gnu89 -Wno-format *.c
 
 ---
-###Example
+### Example
 
 Print a string:
 
@@ -43,6 +53,6 @@ Print a string:
        return (0);
 
 ---
-###Authors
+### Authors
 
-Denisse Landau - Alejandro Montenegro
+[Denisse Landau](https://www.linkedin.com/in/denisse-l-5844a5140/ "Denisse Landau") - [Alejandro Montnegro](www.linkedin.com/in/alejandro-montenegro-505233184 "Alejandro Montnegro")
