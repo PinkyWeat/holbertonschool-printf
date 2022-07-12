@@ -47,4 +47,4 @@ Print a string:
 ---
 ### Authors
 
-[Denisse Landau](https://www.linkedin.com/in/denisse-l-5844a5140/ "Denisse Landau") - Alejandro Montenegro
+[Denisse Landau](https://www.linkedin.com/in/denisse-l-5844a5140/ "Denisse Landau") - [Alejandro Montenegro](https://www.linkedin.com/in/nicolas-montenegro-505233184/ "Alejandro Montnegro")
